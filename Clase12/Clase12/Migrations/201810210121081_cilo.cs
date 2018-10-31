@@ -9,12 +9,17 @@ namespace Clase12.Migrations
         {
             AddColumn("dbo.Clientes", "Salario", c => c.Double(nullable: false));
             AddColumn("dbo.Clientes", "Activo", c => c.Boolean(nullable: false));
+            AddColumn("dbo.TipoClientes", "Nombre", c => c.Boolean(nullable: false));
+
         }
         
         public override void Down()
         {
             DropColumn("dbo.Clientes", "Activo");
             DropColumn("dbo.Clientes", "Salario");
+            DropColumn("dbo.TipoClientes", "Nombre");
+
+
         }
     }
 }

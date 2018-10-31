@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Clase12.Models;
+using Clase12.ViewModels;
 
 namespace Clase12.Controllers
 {
@@ -40,9 +41,26 @@ namespace Clase12.Controllers
         {
             return new List<Movie>
             {
-                 //new Movie {ID=1, Nombre= "Sherk III"},
-                 //new Movie {ID=2, Nombre= "American Pie"}
+                //new Movie {ID=1, Nombre= "Sherk III"},
+                //new Movie {ID=2, Nombre= "American Pie"}
             };
+        }
+        public ActionResult Genero()
+        {
+            var tipoPelicula = _context.TipoPelicula.ToList();
+            var viewModel = new NewPeliculaViewModel
+            {
+                TipoPeliculas = tipoPelicula
+            };
+
+            return View(viewModel);
+        }
+        [HttpPost]
+        public ActionResult Create(Movie movies)
+        {
+            _context.Movies.Add(movies);
+            _context.SaveChanges();
+            return RedirectToAction("ListaMovies", "Movies");
         }
 
     }
