@@ -214,10 +214,6 @@
     <Compile Include="Migrations\201810202309452_creacionDb1.Designer.cs">
       <DependentUpon>201810202309452_creacionDb1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810210121081_cilo.cs" />
-    <Compile Include="Migrations\201810210121081_cilo.Designer.cs">
-      <DependentUpon>201810210121081_cilo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201810302150053_CreacionCliente.cs" />
     <Compile Include="Migrations\201810302150053_CreacionCliente.Designer.cs">
       <DependentUpon>201810302150053_CreacionCliente.cs</DependentUpon>
@@ -336,9 +332,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810202309452_creacionDb1.resx">
       <DependentUpon>201810202309452_creacionDb1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810210121081_cilo.resx">
-      <DependentUpon>201810210121081_cilo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810302150053_CreacionCliente.resx">
       <DependentUpon>201810302150053_CreacionCliente.cs</DependentUpon>
