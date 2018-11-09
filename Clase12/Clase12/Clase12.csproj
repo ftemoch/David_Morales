@@ -8,7 +8,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{130C6C7B-9BC3-4249-BEDD-6764EC7C30F2}</ProjectGuid>
+    <ProjectGuid>{FF9B6E2B-7D97-4488-91A8-FBB0C4F717C9}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -195,40 +195,49 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\TarifaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810191600550_InitialModel.cs" />
-    <Compile Include="Migrations\201810191600550_InitialModel.Designer.cs">
-      <DependentUpon>201810191600550_InitialModel.cs</DependentUpon>
+    <Compile Include="Migrations\201810291507018_InitialModel.cs" />
+    <Compile Include="Migrations\201810291507018_InitialModel.Designer.cs">
+      <DependentUpon>201810291507018_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810191617410_creacionDb.cs" />
-    <Compile Include="Migrations\201810191617410_creacionDb.Designer.cs">
-      <DependentUpon>201810191617410_creacionDb.cs</DependentUpon>
+    <Compile Include="Migrations\201810291520125_CreacionDb.cs" />
+    <Compile Include="Migrations\201810291520125_CreacionDb.Designer.cs">
+      <DependentUpon>201810291520125_CreacionDb.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810202309452_creacionDb1.cs" />
-    <Compile Include="Migrations\201810202309452_creacionDb1.Designer.cs">
-      <DependentUpon>201810202309452_creacionDb1.cs</DependentUpon>
+    <Compile Include="Migrations\201810300350541_CreacionCliente.cs" />
+    <Compile Include="Migrations\201810300350541_CreacionCliente.Designer.cs">
+      <DependentUpon>201810300350541_CreacionCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810302150053_CreacionCliente.cs" />
-    <Compile Include="Migrations\201810302150053_CreacionCliente.Designer.cs">
-      <DependentUpon>201810302150053_CreacionCliente.cs</DependentUpon>
+    <Compile Include="Migrations\201810302132082_DatosTipoCliente.cs" />
+    <Compile Include="Migrations\201810302132082_DatosTipoCliente.Designer.cs">
+      <DependentUpon>201810302132082_DatosTipoCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810302217372_DatosTipoCliente.cs" />
-    <Compile Include="Migrations\201810302217372_DatosTipoCliente.Designer.cs">
-      <DependentUpon>201810302217372_DatosTipoCliente.cs</DependentUpon>
+    <Compile Include="Migrations\201810310353460_CreacionPelicula.cs" />
+    <Compile Include="Migrations\201810310353460_CreacionPelicula.Designer.cs">
+      <DependentUpon>201810310353460_CreacionPelicula.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810310411515_CreacionPelicula.cs" />
-    <Compile Include="Migrations\201810310411515_CreacionPelicula.Designer.cs">
-      <DependentUpon>201810310411515_CreacionPelicula.cs</DependentUpon>
+    <Compile Include="Migrations\201810310357240_DatosTipoPelicula.cs" />
+    <Compile Include="Migrations\201810310357240_DatosTipoPelicula.Designer.cs">
+      <DependentUpon>201810310357240_DatosTipoPelicula.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810310412598_DatosTipoPelicula.cs" />
-    <Compile Include="Migrations\201810310412598_DatosTipoPelicula.Designer.cs">
-      <DependentUpon>201810310412598_DatosTipoPelicula.cs</DependentUpon>
+    <Compile Include="Migrations\201811082248001_tarifaVlrs.cs" />
+    <Compile Include="Migrations\201811082248001_tarifaVlrs.Designer.cs">
+      <DependentUpon>201811082248001_tarifaVlrs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811090004453_creaciondBMovie2.cs" />
+    <Compile Include="Migrations\201811090004453_creaciondBMovie2.Designer.cs">
+      <DependentUpon>201811090004453_creaciondBMovie2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811090022253_Mvs.cs" />
+    <Compile Include="Migrations\201811090022253_Mvs.Designer.cs">
+      <DependentUpon>201811090022253_Mvs.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -236,12 +245,15 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\MyDbContext.cs" />
+    <Compile Include="Models\Tarifas.cs" />
     <Compile Include="Models\TipoCliente.cs" />
     <Compile Include="Models\TipoPelicula.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\NewClienteViewModel.cs" />
     <Compile Include="ViewModels\NewPeliculaViewModel.cs" />
+    <Compile Include="ViewModels\NewTarifaViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -302,10 +314,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Cliente\Lista.cshtml" />
+    <Content Include="Views\Clientes\Lista.cshtml" />
     <Content Include="Views\Movies\ListaMovies.cshtml" />
-    <Content Include="Views\Cliente\Nueva.cshtml" />
+    <Content Include="Views\Clientes\Nueva.cshtml" />
     <Content Include="Views\Movies\Genero.cshtml" />
+    <Content Include="Views\Tarifa\ListaTarifas.cshtml" />
+    <Content Include="Views\Tarifa\NuevaTarifa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -324,26 +338,32 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201810191600550_InitialModel.resx">
-      <DependentUpon>201810191600550_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810291507018_InitialModel.resx">
+      <DependentUpon>201810291507018_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810191617410_creacionDb.resx">
-      <DependentUpon>201810191617410_creacionDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810291520125_CreacionDb.resx">
+      <DependentUpon>201810291520125_CreacionDb.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810202309452_creacionDb1.resx">
-      <DependentUpon>201810202309452_creacionDb1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810300350541_CreacionCliente.resx">
+      <DependentUpon>201810300350541_CreacionCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810302150053_CreacionCliente.resx">
-      <DependentUpon>201810302150053_CreacionCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810302132082_DatosTipoCliente.resx">
+      <DependentUpon>201810302132082_DatosTipoCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810302217372_DatosTipoCliente.resx">
-      <DependentUpon>201810302217372_DatosTipoCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810310353460_CreacionPelicula.resx">
+      <DependentUpon>201810310353460_CreacionPelicula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810310411515_CreacionPelicula.resx">
-      <DependentUpon>201810310411515_CreacionPelicula.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810310357240_DatosTipoPelicula.resx">
+      <DependentUpon>201810310357240_DatosTipoPelicula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810310412598_DatosTipoPelicula.resx">
-      <DependentUpon>201810310412598_DatosTipoPelicula.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811082248001_tarifaVlrs.resx">
+      <DependentUpon>201811082248001_tarifaVlrs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811090004453_creaciondBMovie2.resx">
+      <DependentUpon>201811090004453_creaciondBMovie2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811090022253_Mvs.resx">
+      <DependentUpon>201811090022253_Mvs.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -362,9 +382,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>62966</DevelopmentServerPort>
+          <DevelopmentServerPort>64708</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:62966/</IISUrl>
+          <IISUrl>http://localhost:64708/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

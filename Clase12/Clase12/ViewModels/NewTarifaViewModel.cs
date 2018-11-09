@@ -6,9 +6,9 @@ using Clase12.Models;
 
 namespace Clase12.ViewModels
 {
-	public class NewClienteViewModel
+	public class NewTarifaViewModel
 	{
-		public IEnumerable<TipoCliente> TipoClientes { get; set; }
-		public Cliente Cliente { get; set; }
+		public IEnumerable<Tarifas> Tarifas { get; set; }
+		public Tarifas Tarifa { get; set; }
 	}
 }
